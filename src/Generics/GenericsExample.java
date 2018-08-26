@@ -13,14 +13,16 @@ public class GenericsExample {
 		
 		BaseClass[] baseclassArray= new DerivedClass[2];
 		baseclassArray[0] = new DerivedClass();
-		//baseclassArray[1] = new BaseClass();
+		baseclassArray[1] = new BaseClass();
+		
+		
 		
 		for (int i = 0; i < baseclassArray.length; i++) {
 			System.out.println("valuee=="+baseclassArray[i]);
 		}
 		
 		
-		//List<Number>  abc = new ArrayList<Integer>();
+		List<Integer>  abc = new ArrayList<Integer>();
 		
 		HashSet<String>  hashSet = new HashSet<String>();
 		
@@ -29,3 +31,6 @@ public class GenericsExample {
 	}
 
 }
+
+
+

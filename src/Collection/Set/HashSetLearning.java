@@ -1,11 +1,18 @@
 package Collection.Set;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class HashSetLearning {
 
 	public static void main(String[] args) {
-		HashSet<String>  hashSet = new HashSet<String>();
+		
+		
+		
+		HashSet<String>  hashSet = new HashSet<String>(new ArrayList<String>());
+		
+		
+		
 		if(hashSet.add(null))
 			System.out.println("Value added");
 		else
@@ -41,6 +48,10 @@ public class HashSetLearning {
 }
 
 
+/**
+ * @author thang
+ *
+ */
 class Student{
 	private String name;
 	
@@ -57,9 +68,9 @@ class Student{
 		
 	}
 	
-	/*public int hashCode(){
+	public int hashCode(){
 		return this.name.hashCode();
-	}*/
+	}
 	
 	
 }

@@ -1,6 +1,5 @@
 package Collection.List;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,10 +18,6 @@ public class ArrayListLearning {
 	
 	
 	
-	
-	
-	
-		
 	List<Item>  listItem = new ArrayList<Item>();	
 	
 	Item tv= new Item("TV",500);
@@ -35,6 +30,9 @@ public class ArrayListLearning {
 	listItem.add(tshirt);
 	listItem.add(nightPant);
 	Collections.sort(listItem);
+	
+	
+	
 	for (Item item : listItem) {
 		System.out.println("item name=="+item.getName());
 	}
@@ -46,10 +44,11 @@ public class ArrayListLearning {
 	list.add("4");
 	list.add("5");
 	
+	
+	
 	List<String>  list1=  list.stream().filter((s)->s.equalsIgnoreCase("1")).collect(Collectors.toList());
 	
 	
-
 	
 	System.out.println("List size1=="+list1.size());
 	
@@ -140,7 +139,9 @@ class Item  implements Comparable<Item>{
 
 	@Override
 	public int compareTo(Item o) {
+		System.out.println("One="+this.getName()+" second="+o.getName());
 		return this.name.compareTo(o.getName());
+		
 		/*if(this.name.compareTo(o.getName())==1)
 				return -1;
 		else if(this.name.compareTo(o.getName())==-1)
